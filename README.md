@@ -43,7 +43,7 @@ https://www.infoagepub.com/american-educational-history-journal.html
 https://journals.openedition.org/histoire-education/
 https://www.dgfe.de/sektionen-kommissionen-ag/sektion-1-historische-bildungsforschung/jahrbuch
 https://www.rivistadistoriadelleducazione.it/
-https://www.hecl.it
+https://rivisteopen.unimc.it/index.php/hecl/issue/view/188
 https://revistas.usal.es/tres/index.php/0212-0267
 https://revistas.uptc.edu.co/index.php/historia_educacion_latinamerican/
 https://www.scielo.br/j/rbhe/
