@@ -34,9 +34,9 @@ Per attivare la potente barra di ricerca che consente di cercare articoli in **t
 2. **Copia e incolla** l'intero elenco sottostante nella casella. Puoi incollarli tutti insieme, uno per riga:
 
 ```
-https://www.tandfonline.com/toc/cpdh20/current
+https://www.tandfonline.com/journals/cpdh20
 https://www.cambridge.org/core/journals/history-of-education-quarterly
-https://www.tandfonline.com/toc/thed20/current
+https://www.tandfonline.com/journals/thed20
 https://www.emerald.com/her
 https://historicalstudiesineducation.ca/
 https://journals.openedition.org/histoire-education/
