@@ -40,7 +40,7 @@ https://www.tandfonline.com/toc/thed20/current
 https://www.emerald.com/her
 https://historicalstudiesineducation.ca/
 https://journals.openedition.org/histoire-education/
-https://www.dgfe.de/sektionen-kommissionen-ag/sektion-1-historische-bildungsforschung/jahrbuch
+https://jb-historische-bildungsforschung.de/index.html
 https://www.rivistadistoriadelleducazione.it/
 https://rivisteopen.unimc.it/index.php/hecl/issue/view/188
 https://revistas.usal.es/tres/index.php/0212-0267
