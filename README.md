@@ -39,7 +39,6 @@ https://www.cambridge.org/core/journals/history-of-education-quarterly
 https://www.tandfonline.com/toc/thed20/current
 https://www.emerald.com/her
 https://historicalstudiesineducation.ca/
-https://www.infoagepub.com/american-educational-history-journal.html
 https://journals.openedition.org/histoire-education/
 https://www.dgfe.de/sektionen-kommissionen-ag/sektion-1-historische-bildungsforschung/jahrbuch
 https://www.rivistadistoriadelleducazione.it/
@@ -102,10 +101,9 @@ Il sito web è completo e la **barra di ricerca è attiva e funzionante**! 🎉
 - History of Education (UK)
 - History of Education & Children's Literature (Italia)
 
-### Flagship - Area Anglofona (3 riviste)
+### Flagship - Area Anglofona (2 riviste)
 - History of Education Review (Australia/NZ)
 - Historical Studies in Education (Canada)
-- American Educational History Journal (USA)
 
 ### Flagship - Area Francofona (1 rivista)
 - Histoire de l'éducation (Francia)
