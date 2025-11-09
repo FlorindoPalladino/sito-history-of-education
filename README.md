@@ -5,7 +5,7 @@ Un portale centralizzato per la ricerca accademica nella Storia dell'Educazione,
 ## 🎯 Caratteristiche
 
 - **Ricerca Unificata**: Cerca articoli su tutte le riviste di storia dell'educazione da un'unica barra di ricerca
-- **Categorizzazione Completa**: Riviste organizzate per livello (Global-Tier, Flagship, Tematiche) e per area geografica/linguistica
+- **Categorizzazione Completa**: Riviste organizzate per livello (Global-Tier, Flagship) e per area geografica/linguistica
 - **Design Responsive**: Funziona perfettamente su desktop, tablet e smartphone
 - **Open Access**: Completamente gratuito e accessibile
 
@@ -48,8 +48,6 @@ https://revistas.uptc.edu.co/index.php/historia_educacion_latinamerican/
 https://www.scielo.br/j/rbhe/
 http://seer.ufrgs.br/asphe
 https://seer.ufu.br/index.php/che/
-https://www.tandfonline.com/toc/cjeh20/current
-https://global.oup.com/academic/content/series/h/history-of-universities-series-hou/
 ```
 
 3. Assicurati che l'opzione **"Cerca nell'intero sito"** (o "Include all pages whose address contains this URL") sia **selezionata** per ciascun URL
@@ -120,10 +118,6 @@ Il sito web è completo e la **barra di ricerca è attiva e funzionante**! 🎉
 - Revista Brasileira de História da Educação (Brasile)
 - História da Educação - ASPHE (Brasile)
 - Cadernos de História da Educação (Brasile)
-
-### Riviste Tematiche (2 riviste)
-- Canadian Journal of Education History
-- History of Universities (OUP)
 
 ## 🛠️ Struttura del Progetto
 

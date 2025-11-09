@@ -27,9 +27,6 @@
 
             <h2>Principali Riviste Nazionali e Regionali (Flagship)</h2>
             <div id="flagship-container"></div>
-
-            <h2>Riviste Tematiche Selezionate</h2>
-            <div class="journal-grid thematic-tier"></div>
         </section>
     </main>
 
@@ -180,22 +177,6 @@
                         }
                     ]
                 }
-            ],
-            "tematiche": [
-                {
-                    "nome": "Canadian Journal of Education History",
-                    "editore": "Taylor & Francis",
-                    "focus": "Storia dell'educazione canadese",
-                    "lingue": "Inglese, Francese",
-                    "url": "https://www.tandfonline.com/toc/cjeh20/current"
-                },
-                {
-                    "nome": "History of Universities",
-                    "editore": "Oxford University Press",
-                    "focus": "Storia delle università",
-                    "lingue": "Inglese",
-                    "url": "https://global.oup.com/academic/content/series/h/history-of-universities-series-hou/"
-                }
             ]
         };
 
@@ -234,12 +215,6 @@
                 });
                 areaHtml += '</div>';
                 flagshipContainer.innerHTML += areaHtml;
-            });
-
-            // Popola Tematiche
-            const thematicContainer = document.querySelector('.thematic-tier');
-            data.tematiche.forEach(journal => {
-                thematicContainer.innerHTML += createJournalCard(journal);
             });
         });
     </script>
