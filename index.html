@@ -3,221 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History of Education Journal Hub</title>
+    <title>History Educational Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>History of Education Journal Hub</h1>
-        <p>Il portale per la ricerca sulla Storia dell'Educazione</p>
+    <header class="hub-header">
+        <h1>History Educational Hub</h1>
+        <p>Il portale centralizzato per la ricerca sulla Storia dell'Educazione</p>
+        <p class="subtitle">Accedi a riviste, archivi, strumenti e risorse per la ricerca storico-educativa</p>
     </header>
 
-    <main>
-        <section id="search-section">
-            <h2>Cerca Articoli</h2>
-            <p>Questa barra di ricerca esegue una ricerca federata in tutti gli archivi delle riviste elencate di seguito.</p>
-
-            <script async src="https://cse.google.com/cse.js?cx=66ebbb48f636a429a"></script>
-            <div class="gcse-search"></div>
+    <main class="hub-main">
+        <section class="hub-intro">
+            <h2>Benvenuto nell'Hub Educativo</h2>
+            <p>
+                Questo hub è stato progettato per facilitare l'accesso alle principali risorse
+                per la ricerca sulla storia dell'educazione. Esplora le sezioni qui sotto per
+                scoprire riviste accademiche, archivi digitali, strumenti di ricerca e molto altro.
+            </p>
         </section>
 
-        <section id="journals">
-            <h2>Riviste "Global-Tier" (Il Vertice della Disciplina)</h2>
-            <div class="journal-grid global-tier"></div>
+        <section class="hub-grid">
+            <!-- Riviste Section -->
+            <div class="hub-card primary-card">
+                <div class="card-icon">📚</div>
+                <h3>Riviste Accademiche</h3>
+                <p>
+                    Accedi alle principali riviste internazionali sulla storia dell'educazione.
+                    Include riviste "Global-Tier" e le principali pubblicazioni nazionali e regionali.
+                </p>
+                <div class="card-features">
+                    <span class="feature-badge">Ricerca Federata</span>
+                    <span class="feature-badge">17+ Riviste</span>
+                    <span class="feature-badge">Multilingua</span>
+                </div>
+                <a href="journals.html" class="hub-link primary-link">Esplora le Riviste →</a>
+            </div>
 
-            <h2>Principali Riviste Nazionali e Regionali (Flagship)</h2>
-            <div id="flagship-container"></div>
+            <!-- Archivi Digitali Section -->
+            <div class="hub-card">
+                <div class="card-icon">🗄️</div>
+                <h3>Archivi Digitali</h3>
+                <p>
+                    Scopri archivi digitali e collezioni storiche dedicate alla storia dell'educazione
+                    e delle istituzioni scolastiche.
+                </p>
+                <div class="card-status">In Sviluppo</div>
+            </div>
+
+            <!-- Biblioteche e Database Section -->
+            <div class="hub-card">
+                <div class="card-icon">📖</div>
+                <h3>Biblioteche e Database</h3>
+                <p>
+                    Cataloghi online, bibliografie specializzate e database di fonti primarie
+                    per la ricerca storico-educativa.
+                </p>
+                <div class="card-status">In Sviluppo</div>
+            </div>
+
+            <!-- Strumenti di Ricerca Section -->
+            <div class="hub-card">
+                <div class="card-icon">🔍</div>
+                <h3>Strumenti di Ricerca</h3>
+                <p>
+                    Risorse metodologiche, guide alla ricerca e strumenti digitali per
+                    supportare la tua attività di ricerca.
+                </p>
+                <div class="card-status">In Sviluppo</div>
+            </div>
+
+            <!-- Società e Network Section -->
+            <div class="hub-card">
+                <div class="card-icon">🤝</div>
+                <h3>Società e Network</h3>
+                <p>
+                    Associazioni scientifiche, gruppi di ricerca e network accademici
+                    nel campo della storia dell'educazione.
+                </p>
+                <div class="card-status">In Sviluppo</div>
+            </div>
+
+            <!-- Eventi e Conferenze Section -->
+            <div class="hub-card">
+                <div class="card-icon">📅</div>
+                <h3>Eventi e Conferenze</h3>
+                <p>
+                    Calendario di conferenze, workshop, seminari e altri eventi accademici
+                    sulla storia dell'educazione.
+                </p>
+                <div class="card-status">In Sviluppo</div>
+            </div>
+        </section>
+
+        <section class="hub-info">
+            <h2>Chi Siamo</h2>
+            <p>
+                L'History Educational Hub è un progetto open source che mira a centralizzare
+                e rendere più accessibili le risorse per la ricerca sulla storia dell'educazione.
+                Il progetto è in continua evoluzione e accoglie contributi dalla comunità accademica.
+            </p>
         </section>
     </main>
 
     <footer>
         <p>Creato da <strong>Florindo Palladino</strong> | <a href="https://github.com/FlorindoPalladino/sito-history-of-education" target="_blank" rel="noopener">Open Source su GitHub</a></p>
-        <p>Tutti i link appartengono ai rispettivi editori.</p>
+        <p>Progetto in sviluppo - Contributi benvenuti</p>
     </footer>
-
-    <script>
-        // Dati JSON completi delle riviste
-        const data = {
-            "globalTier": [
-                {
-                    "nome": "Paedagogica Historica",
-                    "affiliazione": "ISCHE (International Standing Conference for the History of Education)",
-                    "editore": "Taylor & Francis",
-                    "regione": "Internazionale",
-                    "lingue": "Inglese",
-                    "url": "https://www.tandfonline.com/journals/cpdh20"
-                },
-                {
-                    "nome": "History of Education Quarterly",
-                    "affiliazione": "History of Education Society (USA)",
-                    "editore": "Cambridge University Press",
-                    "regione": "USA (con portata internazionale)",
-                    "lingue": "Inglese",
-                    "url": "https://www.cambridge.org/core/journals/history-of-education-quarterly"
-                },
-                {
-                    "nome": "History of Education",
-                    "affiliazione": "History of Education Society (UK)",
-                    "editore": "Taylor & Francis",
-                    "regione": "UK (con portata internazionale)",
-                    "lingue": "Inglese",
-                    "url": "https://www.tandfonline.com/journals/thed20"
-                },
-                {
-                    "nome": "History of Education & Children's Literature (HECL)",
-                    "affiliazione": "Università di Macerata",
-                    "editore": "EUM",
-                    "regione": "Italia (con portata internazionale)",
-                    "lingue": "Inglese, Italiano",
-                    "url": "https://rivisteopen.unimc.it/index.php/hecl/issue/view/188"
-                }
-            ],
-            "flagship": [
-                {
-                    "area": "Area Anglofona",
-                    "riviste": [
-                        {
-                            "nome": "History of Education Review",
-                            "affiliazione": "Australian and New Zealand History of Education Society",
-                            "editore": "Emerald Publishing",
-                            "regione": "Australia/Nuova Zelanda",
-                            "lingue": "Inglese",
-                            "url": "https://www.emerald.com/her"
-                        },
-                        {
-                            "nome": "Historical Studies in Education / Revue d'histoire de l'éducation",
-                            "affiliazione": "Canadian History of Education Association",
-                            "editore": "Open Access",
-                            "regione": "Canada",
-                            "lingue": "Inglese, Francese",
-                            "url": "https://historicalstudiesineducation.ca/"
-                        }
-                    ]
-                },
-                {
-                    "area": "Area Francofona",
-                    "riviste": [
-                        {
-                            "nome": "Histoire de l'éducation",
-                            "affiliazione": "Service d'histoire de l'éducation (SHE/ENS)",
-                            "editore": "ENS Éditions",
-                            "regione": "Francia",
-                            "lingue": "Francese, Inglese",
-                            "url": "https://journals.openedition.org/histoire-education/"
-                        }
-                    ]
-                },
-                {
-                    "area": "Area Germanofona",
-                    "riviste": [
-                        {
-                            "nome": "Jahrbuch für Historische Bildungsforschung",
-                            "affiliazione": "Sektion Historische Bildungsforschung (DGfE)",
-                            "editore": "Verlag Julius Klinkhardt",
-                            "regione": "Germania",
-                            "lingue": "Tedesco",
-                            "url": "https://jb-historische-bildungsforschung.de/index.html"
-                        }
-                    ]
-                },
-                {
-                    "area": "Area Italofona",
-                    "riviste": [
-                        {
-                            "nome": "Rivista di Storia dell'Educazione",
-                            "affiliazione": "CIRSE (Centro Italiano per la Ricerca Storico-Educativa)",
-                            "editore": "ETS",
-                            "regione": "Italia",
-                            "lingue": "Italiano, Inglese",
-                            "url": "https://www.rivistadistoriadelleducazione.it/"
-                        }
-                    ]
-                },
-                {
-                    "area": "Area Iberica e Latinoamericana",
-                    "riviste": [
-                        {
-                            "nome": "Historia de la Educación. Revista interuniversitaria",
-                            "affiliazione": "Universidad de Salamanca",
-                            "editore": "Ediciones Universidad de Salamanca",
-                            "regione": "Spagna",
-                            "lingue": "Spagnolo, Portoghese, Inglese",
-                            "url": "https://revistas.usal.es/tres/index.php/0212-0267"
-                        },
-                        {
-                            "nome": "Revista Historia de la Educación Latinoamericana",
-                            "affiliazione": "Universidad Pedagógica y Tecnológica de Colombia",
-                            "editore": "UPTC",
-                            "regione": "Colombia / America Latina",
-                            "lingue": "Spagnolo, Portoghese",
-                            "url": "https://revistas.uptc.edu.co/index.php/historia_educacion_latinamerican/"
-                        },
-                        {
-                            "nome": "Revista Brasileira de História da Educação",
-                            "affiliazione": "Sociedade Brasileira de História da Educação",
-                            "editore": "SciELO",
-                            "regione": "Brasile",
-                            "lingue": "Portoghese, Spagnolo, Inglese",
-                            "url": "https://www.scielo.br/j/rbhe/"
-                        },
-                        {
-                            "nome": "História da Educação (ASPHE)",
-                            "affiliazione": "Associação Sul-Rio-Grandense de Pesquisadores em História da Educação",
-                            "editore": "UFRGS",
-                            "regione": "Brasile (Rio Grande do Sul)",
-                            "lingue": "Portoghese",
-                            "url": "http://seer.ufrgs.br/asphe"
-                        },
-                        {
-                            "nome": "Cadernos de História da Educação",
-                            "affiliazione": "Universidade Federal de Uberlândia",
-                            "editore": "UFU",
-                            "regione": "Brasile",
-                            "lingue": "Portoghese, Spagnolo, Inglese",
-                            "url": "https://seer.ufu.br/index.php/che/"
-                        }
-                    ]
-                }
-            ]
-        };
-
-        // Funzione per creare una "card" di una rivista
-        function createJournalCard(journal) {
-            const affiliazione = journal.affiliazione || journal.editore || '';
-            const regione = journal.regione || journal.focus || '';
-
-            return `
-                <div class="journal-card">
-                    <h3>${journal.nome}</h3>
-                    ${affiliazione ? `<p><strong>Affiliazione:</strong> ${affiliazione}</p>` : ''}
-                    ${journal.editore && journal.affiliazione !== journal.editore ? `<p><strong>Editore:</strong> ${journal.editore}</p>` : ''}
-                    ${regione ? `<p><strong>Regione/Focus:</strong> ${regione}</p>` : ''}
-                    ${journal.lingue ? `<p><strong>Lingue:</strong> ${journal.lingue}</p>` : ''}
-                    <a href="${journal.url}" target="_blank" class="journal-link">Visita Rivista →</a>
-                </div>
-            `;
-        }
-
-        // Popola le sezioni quando la pagina è caricata
-        document.addEventListener('DOMContentLoaded', () => {
-            // Popola Global-Tier
-            const globalContainer = document.querySelector('.global-tier');
-            data.globalTier.forEach(journal => {
-                globalContainer.innerHTML += createJournalCard(journal);
-            });
-
-            // Popola Flagship (divise per area)
-            const flagshipContainer = document.querySelector('#flagship-container');
-            data.flagship.forEach(area => {
-                let areaHtml = `<h3>${area.area}</h3>`;
-                areaHtml += '<div class="journal-grid">';
-                area.riviste.forEach(journal => {
-                    areaHtml += createJournalCard(journal);
-                });
-                areaHtml += '</div>';
-                flagshipContainer.innerHTML += areaHtml;
-            });
-        });
-    </script>
 </body>
 </html>
