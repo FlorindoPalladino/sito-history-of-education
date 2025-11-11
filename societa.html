@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Società Scientifiche - History of Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Società Scientifiche di Storia dell'Educazione</h1>
+        <p>Organizzazioni e reti internazionali per la ricerca storico-educativa</p>
+    </header>
+
+    <main>
+        <section id="navigation-section">
+            <div class="nav-cards">
+                <div class="nav-card">
+                    <h3>📚 Riviste Scientifiche</h3>
+                    <p>Esplora le principali riviste di Storia dell'Educazione a livello globale e regionale</p>
+                    <a href="index.html" class="journal-link">Vedi Riviste →</a>
+                </div>
+                <div class="nav-card">
+                    <h3>🏛️ Società Scientifiche</h3>
+                    <p>Scopri le organizzazioni e reti internazionali di ricerca storico-educativa</p>
+                    <a href="#societies" class="journal-link">Vedi Società ↓</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="societies">
+            <h2>Società Internazionali</h2>
+            <div class="journal-grid international-societies"></div>
+
+            <h2>Europa Occidentale</h2>
+            <div class="journal-grid western-europe"></div>
+
+            <h2>Europa Centro-Orientale e Scandinavia</h2>
+            <div class="journal-grid central-europe"></div>
+
+            <h2>Nord America</h2>
+            <div class="journal-grid north-america"></div>
+
+            <h2>America Latina</h2>
+            <div class="journal-grid latin-america"></div>
+
+            <h2>Asia-Pacifico</h2>
+            <div class="journal-grid asia-pacific"></div>
+
+            <h2>Africa</h2>
+            <div class="journal-grid africa"></div>
+
+            <h2>Reti Regionali e Linguistiche</h2>
+            <div class="journal-grid networks"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creato da <strong>Florindo Palladino</strong> | <a href="https://github.com/FlorindoPalladino/sito-history-of-education" target="_blank" rel="noopener">Open Source su GitHub</a></p>
+        <p>Tutti i link appartengono alle rispettive organizzazioni.</p>
+    </footer>
+
+    <script>
+        // Dati JSON delle società scientifiche
+        const societiesData = {
+            "international": [
+                {
+                    "nome": "ISCHE - International Standing Conference for the History of Education",
+                    "url": "https://www.ische.org/",
+                    "fondazione": "1978",
+                    "sede": "Germania",
+                    "conferenza": "Annuale, rotazione globale (ISCHE 45: 2024 Brasile, ISCHE 46: 2025 Francia)",
+                    "rivista": "Paedagogica Historica (trilingue: inglese/francese/tedesco, Taylor & Francis)",
+                    "focus": "Globale, tutti i periodi storici, tutti gli aspetti storia educazione",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "EERA Network 17 - Histories of Education",
+                    "url": "https://eera-ecer.de/networks/17-histories-of-education",
+                    "fondazione": "1999",
+                    "sede": "Berlino",
+                    "conferenza": "ECER annuale + History of Education Doctoral Summer School",
+                    "attivita": "Summer School 2025: KU Leuven 'Voices and Silences'",
+                    "focus": "Spazi educativi europei, circolazione transnazionale idee, storia coloniale",
+                    "status": "✅ ATTIVA"
+                }
+            ],
+            "westernEurope": [
+                {
+                    "nome": "History of Education Society (HES UK)",
+                    "url": "https://historyofeducation.org.uk/",
+                    "sede": "Regno Unito",
+                    "conferenza": "Annuale (2025: 14-16 nov Winchester 'Gender, Networks and Leadership')",
+                    "rivista": "History of Education (Taylor & Francis)",
+                    "focus": "UK con connessioni internazionali, tutti i periodi",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "ATRHE - Association transdisciplinaire pour les recherches historiques sur l'éducation",
+                    "url": "https://www.atrhe.org/",
+                    "fondazione": "2011",
+                    "sede": "Caen, Francia",
+                    "conferenza": "Colloque biennale (VII: 2-4 giugno 2026 'Territoires en marges')",
+                    "focus": "Francia, XVII-XXI secolo, approccio transdisciplinare",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "Sektion Historische Bildungsforschung (DGfE)",
+                    "url": "https://www.dgfe.de/sektionen-kommissionen-ag/sektion-1-historische-bildungsforschung",
+                    "fondazione": "1972",
+                    "sede": "Germania",
+                    "conferenza": "Biennale",
+                    "rivista": "Jahrbuch für Historische Bildungsforschung (Julius Klinkhardt Verlag)",
+                    "focus": "Germania/paesi germanofoni, tutti i periodi, enfasi moderno",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "CIRSE - Centro Italiano per la Ricerca Storico-Educativa",
+                    "url": "https://www.cirse.it/",
+                    "fondazione": "Anni 1970-80",
+                    "sede": "Italia",
+                    "conferenza": "Convegno biennale (XVII: maggio 2022 Messina)",
+                    "rivista": "Rivista di Storia dell'Educazione ✓ OPEN ACCESS",
+                    "focus": "Italia, tutti i periodi, storia pedagogia/scuole/istituzioni",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "SEDHE - Sociedad Española de Historia de la Educación",
+                    "url": "https://sedhe.es/",
+                    "fondazione": "28 gennaio 1989",
+                    "sede": "Spagna",
+                    "conferenza": "Coloquios biennali (XXIII: 5-7 nov 2025 Palma 'Compromiso social')",
+                    "rivista": "Historia y Memoria de la Educación ✓ OPEN ACCESS",
+                    "focus": "Spagna, connessioni iberoamericane, tutti i periodi",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "HISTEDUP - Associação de História da Educação de Portugal",
+                    "url": "https://histedup.com/",
+                    "fondazione": "2015",
+                    "sede": "Portogallo",
+                    "conferenza": "Nazionali + Incontri iberici + COLUBHE (luso-brasiliano)",
+                    "attivita": "X Encontro Ibérico 6-7 luglio 2025 Granada",
+                    "focus": "Portogallo, connessioni iberoamericane/internazionali",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "BENGOO - Belgisch-Nederlandse Vereniging",
+                    "url": "https://bengoo.nl/",
+                    "sede": "Belgio/Paesi Bassi",
+                    "conferenza": "Giornate studio (2021: formazione insegnanti)",
+                    "focus": "Storia educazione Belgio/Paesi Bassi",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "SGBF - Gruppo Ricerca Storica Educativa",
+                    "url": "https://www.hist-edu.ch/",
+                    "fondazione": "2014",
+                    "sede": "Svizzera",
+                    "rivista": "Schweizerische Zeitschrift für Bildungswissenschaften (OA eccetto ultimi 2 anni)",
+                    "focus": "Svizzera, multilingue (tedesco/francese/italiano), prospettive comparative",
+                    "status": "✅ ATTIVA"
+                }
+            ],
+            "centralEurope": [
+                {
+                    "nome": "GSEH/ELEIE - Ελληνική Εταιρεία Ιστορικών της Εκπαίδευσης",
+                    "url": "http://www.eleie.gr/",
+                    "sede": "Grecia",
+                    "attivita": "Serie webinar italo-greca (dal maggio 2024, 4-5 volte/anno)",
+                    "focus": "Grecia, studi comparativi con Italia/Europa, educazione religiosa, riforme",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "Selskabet for Skole- og Uddannelseshistorie",
+                    "url": "https://uddannelseshistorie.dk/",
+                    "fondazione": "1966",
+                    "sede": "Roskilde, Danimarca",
+                    "pubblicazioni": "Annuario 'Uddannelseshistorie' (dal 1967, 56 volumi 1967-2022)",
+                    "focus": "Storia scolastica danese, tutti i livelli educazione",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "FSUH - Föreningen för svensk undervisningshistoria",
+                    "url": "https://undervisningshistoria.se/",
+                    "fondazione": "5 luglio 1920",
+                    "sede": "Svezia",
+                    "conferenza": "Annuale (aprile 2025 Uppsala)",
+                    "rivista": "Vägval i skolans historia (4 numeri/anno dal 2001)",
+                    "focus": "Storia educativa svedese tutti i periodi, insegnanti, riforme",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "Finnish Society for the History of Education",
+                    "sede": "Finlandia",
+                    "rivista": "Kasvatus & Aika (Education and Time, primo numero 2007)",
+                    "pubblicazioni": "Annuario 'Koulu ja menneisyys' (59 annuari 1935-2019)",
+                    "focus": "Storia educazione finlandese",
+                    "status": "✅ ATTIVA"
+                }
+            ],
+            "northAmerica": [
+                {
+                    "nome": "History of Education Society (HES)",
+                    "url": "https://www.historyofeducation.org/",
+                    "fondazione": "1960",
+                    "sede": "USA",
+                    "conferenza": "Annuale fine ottobre/inizio novembre (2025: 6-9 nov Providence RI)",
+                    "rivista": "History of Education Quarterly (dal 1960, Cambridge Core)",
+                    "focus": "Internazionale (principalmente USA), tutti i periodi",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "AERA Division F: History and Historiography",
+                    "url": "https://www.aera.net/Division-F/History-Historiography-F",
+                    "sede": "USA",
+                    "conferenza": "AERA Annual Meeting aprile (2025: 23-27 aprile Denver)",
+                    "focus": "Nazionale/internazionale/comparativo, storia e storiografia, multidisciplinare",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "OEH - Organization of Educational Historians",
+                    "url": "http://www.edhistorians.org/",
+                    "sede": "USA",
+                    "conferenza": "Annuale online (26-27 settembre)",
+                    "rivista": "American Educational History Journal",
+                    "focus": "Studio comprensivo storia educazione, tutti i periodi, multidisciplinare",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "CHEA/ACHÉ - Canadian History of Education Association",
+                    "url": "https://www.ache-chea.ca/",
+                    "fondazione": "1980",
+                    "sede": "Canada",
+                    "conferenza": "Biennale (2026: 15-17 ott Winnipeg)",
+                    "rivista": "Historical Studies in Education / Revue d'histoire de l'éducation ✓ OPEN ACCESS",
+                    "focus": "Canada/internazionale/transnazionale, contesti formali/informali",
+                    "status": "✅ ATTIVA"
+                }
+            ],
+            "latinAmerica": [
+                {
+                    "nome": "SBHE - Sociedade Brasileira de História da Educação",
+                    "url": "https://sbhe.org.br/",
+                    "fondazione": "Settembre 1999",
+                    "sede": "Universidade Estadual Maringá, Brasile",
+                    "conferenza": "CBHE biennale (XII: 14-17 agosto 2024 Natal 'E-história da educação')",
+                    "rivista": "Revista Brasileira de História da Educação (RBHE) ✓ OPEN ACCESS",
+                    "focus": "Brasile/internazionale, tutti i periodi, interdisciplinare/plurale",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "SAIEHE - Sociedad Argentina de Investigación y Enseñanza en Historia de la Educación",
+                    "url": "https://www.saiehe.org.ar/",
+                    "fondazione": "1995 (rinominata 2020)",
+                    "sede": "Argentina",
+                    "conferenza": "Jornadas annuali (XIX: 2019 San Salvador de Jujuy)",
+                    "rivista": "Anuario de Historia de la Educación ✓ OPEN ACCESS",
+                    "focus": "Argentina/America Latina, tutti i periodi, interdisciplinare",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "SOMEHIDE - Sociedad Mexicana de Historia de la Educación",
+                    "url": "https://somehide.org/",
+                    "fondazione": "Febbraio 2002",
+                    "sede": "Messico",
+                    "conferenza": "Encuentro Internacional annuale (XVIII: 13-15 nov 2024 San Luis Potosí)",
+                    "rivista": "Revista Mexicana de Historia de la Educación",
+                    "focus": "Messico/America Latina, XIX-XX sec principalmente, libri testo/modelli transnazionali",
+                    "status": "✅ ATTIVA"
+                }
+            ],
+            "asiaPacific": [
+                {
+                    "nome": "ANZHES - Australian & New Zealand History of Education Society",
+                    "url": "https://anzhes.com/",
+                    "fondazione": "1971",
+                    "sede": "Australia/Nuova Zelanda",
+                    "conferenza": "Annuale dal 1971 (2025: 11-12 dic Symposium 'Education Histories Now')",
+                    "rivista": "History of Education Review (dal 1972, ranking 'A')",
+                    "focus": "Australia/NZ, educazione coloniale/postcoloniale/indigena, formazione insegnanti",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "JSHSE - Japan Society for Historical Studies of Education",
+                    "url": "http://kyouikushigakkai.jp/eng",
+                    "fondazione": "4 maggio 1956",
+                    "sede": "Nihon University, Tokyo",
+                    "conferenza": "Annuale dal 1956",
+                    "rivista": "Historical Studies of Education in Japan ✓ OPEN ACCESS",
+                    "focus": "Giappone/Asia/Occidente, tutti i periodi, metodologia scientifica",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "IARHE - Israeli Association for the Research of the History of Education",
+                    "sede": "Israele",
+                    "focus": "Israele/educazione ebraica",
+                    "status": "✅ ATTIVA"
+                }
+            ],
+            "africa": [
+                {
+                    "nome": "SACHES - Southern African Comparative and History of Education Society",
+                    "url": "https://www.saches.co.za/",
+                    "sede": "Sud Africa",
+                    "conferenza": "Regolari, atti pubblicati annualmente",
+                    "focus": "Africa Australe (SA/Zimbabwe/Namibia/Botswana), educazione coloniale/apartheid/post-apartheid",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "SASHT - South African Society for History Teaching",
+                    "url": "https://sasht.co.za/",
+                    "fondazione": "Anni 1980-90",
+                    "sede": "Sud Africa",
+                    "conferenza": "Regolari (2024 svolta)",
+                    "rivista": "Yesterday and Today (precedentemente pubblicata)",
+                    "focus": "Sud Africa/Africa Australe, apartheid/post-apartheid, metodologia insegnamento storia",
+                    "status": "✅ ATTIVA"
+                }
+            ],
+            "networks": [
+                {
+                    "nome": "Nordic Network for Historians of Education",
+                    "fondazione": "2005",
+                    "ambito": "Paesi nordici (Danimarca/Finlandia/Islanda/Norvegia/Svezia)",
+                    "membri": "~290",
+                    "attivita": "Conferenze nordiche (dal 2009), partnership Nordic Journal of Educational History",
+                    "focus": "Cooperazione multi-disciplinare nordica",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "NERA Network 11 - Historical Research",
+                    "url": "https://neranetwork11.wordpress.com/",
+                    "fondazione": "1972",
+                    "conferenza": "NERA annuale marzo (2025: 5-7 marzo Helsinki)",
+                    "ambito": "Paesi nordici",
+                    "focus": "Ricerca storica nell'educazione",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "CIHELA - Congreso Iberoamericano de Historia de la Educación Latinoamericana",
+                    "url": "www.cihela2023py.com",
+                    "fondazione": "1992 Bogotá",
+                    "conferenza": "Biennale (XV: ott 2023 Villarrica Paraguay, XVI: 2025 Cile)",
+                    "ambito": "Iberoamerica (paesi ispanofoni/lusofoni LA + Spagna/Portogallo)",
+                    "focus": "Storia educazione latino-americana",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "SHELA - Sociedad de Historia de la Educación Latinoamericana",
+                    "fondazione": "1994",
+                    "sede": "Colombia (UPTC Tunja)",
+                    "rivista": "Revista Historia de la Educación Latinoamericana (RHELA) ✓ OPEN ACCESS",
+                    "ambito": "America Latina/Caraibi",
+                    "focus": "Periodo coloniale-presente, storia università/insegnanti/libri testo/politiche",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "Éducation et francophonie (ACELF)",
+                    "url": "https://acelf.ca/ressources/education_et_francophonie/",
+                    "fondazione": "Dicembre 1971",
+                    "sede": "Quebec, Canada",
+                    "pubblicazioni": "Due volte/anno, tematica ✓ OPEN ACCESS",
+                    "ambito": "Francofonia canadese/internazionale",
+                    "focus": "Educazione in francese, identità francofona, voce minoranze",
+                    "status": "✅ ATTIVA"
+                },
+                {
+                    "nome": "ISCHE Standing Working Group - History of Education in African Societies",
+                    "periodo": "2024-2029",
+                    "ambito": "Africa",
+                    "focus": "Colmare gap ricerca Africa, superare dominazione coloniale, ripensare paradigma scolastico occidentale",
+                    "status": "✅ ATTIVA"
+                }
+            ]
+        };
+
+        // Funzione per creare una "card" di una società
+        function createSocietyCard(society) {
+            let html = `
+                <div class="journal-card">
+                    <h3>${society.nome}</h3>
+            `;
+
+            if (society.url) {
+                html += `<p><strong>🌐 Sito:</strong> <a href="${society.url}" target="_blank" rel="noopener" style="color: var(--accent-color);">${society.url}</a></p>`;
+            }
+
+            if (society.fondazione) {
+                html += `<p><strong>📅 Fondazione:</strong> ${society.fondazione}</p>`;
+            }
+
+            if (society.sede) {
+                html += `<p><strong>📍 Sede:</strong> ${society.sede}</p>`;
+            }
+
+            if (society.ambito) {
+                html += `<p><strong>🌍 Ambito:</strong> ${society.ambito}</p>`;
+            }
+
+            if (society.conferenza) {
+                html += `<p><strong>🎓 Conferenza:</strong> ${society.conferenza}</p>`;
+            }
+
+            if (society.rivista) {
+                html += `<p><strong>📚 Rivista:</strong> ${society.rivista}</p>`;
+            }
+
+            if (society.pubblicazioni) {
+                html += `<p><strong>📖 Pubblicazioni:</strong> ${society.pubblicazioni}</p>`;
+            }
+
+            if (society.attivita) {
+                html += `<p><strong>✨ Attività:</strong> ${society.attivita}</p>`;
+            }
+
+            if (society.membri) {
+                html += `<p><strong>👥 Membri:</strong> ${society.membri}</p>`;
+            }
+
+            if (society.periodo) {
+                html += `<p><strong>⏱️ Periodo:</strong> ${society.periodo}</p>`;
+            }
+
+            if (society.focus) {
+                html += `<p><strong>🔍 Focus:</strong> ${society.focus}</p>`;
+            }
+
+            if (society.status) {
+                html += `<p><strong>Status:</strong> <span style="color: #28a745; font-weight: 600;">${society.status}</span></p>`;
+            }
+
+            if (society.url) {
+                html += `<a href="${society.url}" target="_blank" class="journal-link">Visita Sito →</a>`;
+            }
+
+            html += `</div>`;
+
+            return html;
+        }
+
+        // Popola le sezioni quando la pagina è caricata
+        document.addEventListener('DOMContentLoaded', () => {
+            // Internazionali
+            const internationalContainer = document.querySelector('.international-societies');
+            societiesData.international.forEach(society => {
+                internationalContainer.innerHTML += createSocietyCard(society);
+            });
+
+            // Europa Occidentale
+            const westernEuropeContainer = document.querySelector('.western-europe');
+            societiesData.westernEurope.forEach(society => {
+                westernEuropeContainer.innerHTML += createSocietyCard(society);
+            });
+
+            // Europa Centro-Orientale
+            const centralEuropeContainer = document.querySelector('.central-europe');
+            societiesData.centralEurope.forEach(society => {
+                centralEuropeContainer.innerHTML += createSocietyCard(society);
+            });
+
+            // Nord America
+            const northAmericaContainer = document.querySelector('.north-america');
+            societiesData.northAmerica.forEach(society => {
+                northAmericaContainer.innerHTML += createSocietyCard(society);
+            });
+
+            // America Latina
+            const latinAmericaContainer = document.querySelector('.latin-america');
+            societiesData.latinAmerica.forEach(society => {
+                latinAmericaContainer.innerHTML += createSocietyCard(society);
+            });
+
+            // Asia-Pacifico
+            const asiaPacificContainer = document.querySelector('.asia-pacific');
+            societiesData.asiaPacific.forEach(society => {
+                asiaPacificContainer.innerHTML += createSocietyCard(society);
+            });
+
+            // Africa
+            const africaContainer = document.querySelector('.africa');
+            societiesData.africa.forEach(society => {
+                africaContainer.innerHTML += createSocietyCard(society);
+            });
+
+            // Reti
+            const networksContainer = document.querySelector('.networks');
+            societiesData.networks.forEach(society => {
+                networksContainer.innerHTML += createSocietyCard(society);
+            });
+        });
+    </script>
+</body>
+</html>

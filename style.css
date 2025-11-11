@@ -83,6 +83,54 @@ h3 {
     padding-left: 1rem;
 }
 
+/* === Sezione Navigazione === */
+#navigation-section {
+    margin-bottom: 3rem;
+}
+
+.nav-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.nav-card {
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px var(--shadow-light);
+    transition: transform var(--transition-speed) ease,
+                box-shadow var(--transition-speed) ease,
+                border-color var(--transition-speed) ease;
+}
+
+.nav-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px var(--shadow-medium);
+    border-color: var(--accent-color);
+}
+
+.nav-card h3 {
+    margin: 0 0 1rem 0;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    border: none;
+    padding: 0;
+}
+
+.nav-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.nav-card .journal-link {
+    margin-top: 0;
+}
+
 /* === Sezione Ricerca === */
 #search-section {
     background-color: var(--card-bg);
